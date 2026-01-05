@@ -1,34 +1,23 @@
-# Prerequisites
-*.d
+﻿# Build directories
+build/
+cmake-build-*/
+bin/
+lib/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
 
 # Compiled Object files
-*.slo
-*.lo
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
 *.lib
 
@@ -36,6 +25,31 @@
 *.exe
 *.out
 *.app
+xray-viewer
 
-# debug information files
-*.dwo
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+
+# Test images (optional, if large)
+test_images/*.tiff
+test_images/*.tif
+
+# Core dumps
+core
+core.*
+
+# Package files
+*.deb
+*.rpm
+*.tar.gz
+*.zip
